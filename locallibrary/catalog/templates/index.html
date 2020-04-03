@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+
+
+{% block title %}
+  <title>Homepage</title>
+{% endblock %}
+
+{% block content %}
+  <h1><center>Local Library Home</center></h1>
+  <br><br>
+  <p>Welcome to LocalLibrary, a website developed by <em>Mozilla Developer Network</em>!</p>
+  <br><br>
+  <h4>Dynamic content</h4>
+  <p>The library has the following record counts:</p>
+  <ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+    <li><strong>Number of times you have landed on this page:</strong> {{num_visits}} </li>
+  </ul>
+{% endblock %}
